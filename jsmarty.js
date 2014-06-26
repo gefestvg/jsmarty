@@ -3364,8 +3364,8 @@
 
 
 //自定义配置 “界定符”
-jSmart.prototype.left_delimiter = '<{';
-jSmart.prototype.right_delimiter = '}>';
+jSmart.prototype.left_delimiter = '{';
+jSmart.prototype.right_delimiter = '}';
 
 //字符串切割插件
 jSmart.prototype.registerPlugin(
