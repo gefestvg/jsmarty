@@ -3377,6 +3377,19 @@ jSmart.prototype.registerPlugin(
     }
 );
 
+jSmart.prototype.registerPlugin(
+        'modifier',
+        'date_format',
+        function(s, fmt, defaultDate)
+            {
+            if (!s)
+            {
+                return '';
+            }
+            return jSmart.prototype.PHPJS('strftime','date_format').strftime(fmt?fmt:'%b %e, %Y', jSmart.prototype.makeTimeStamp(s?s:defaultDate));
+        }
+    );
+
 //输出对外渲染接口
 module.exports.render = function(tpl, data){
 	return (new jSmart(tpl)).fetch(data);
