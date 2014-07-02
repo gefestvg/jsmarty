@@ -2042,7 +2042,7 @@
     {
         if (eval('typeof '+fnm) == 'function')
         {
-            return (typeof window == 'object') ? window : global;
+            return global;
         }
         else if (typeof(PHP_JS) == 'function')
         {
