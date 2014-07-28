@@ -3382,8 +3382,8 @@
             "щ" : "sch", "ъ" : "y", "ї" : "yi", "Ї" : "Yi", "є" : "ye", "Є":"Ye",
             "ы" : "yi", "ь" : "", "э" : "e", "ю" : "yu", "я" : "ya",
             " " : " ", "." : ".", "/" : "_"};
-            var st=s.toLowerCase();
-            return jSmart.prototype.PHPJS('strtr','translit_and_replace_spaces').strtr(jSmart.prototype.PHPJS('str_replace','translit_and_replace_spaces').str_replace([' ', '.', ','], ['_','',''], st,tr);
+          //  var st=s.toLowerCase();
+            return jSmart.prototype.PHPJS('strtr','translit_and_replace_spaces').strtr(jSmart.prototype.PHPJS('str_replace','translit_and_replace_spaces').str_replace([' ', '.', ','], ['_','',''], s.toLowerCase() ,tr);
         }
     );
 
