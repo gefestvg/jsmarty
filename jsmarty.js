@@ -3319,6 +3319,15 @@
     );
 
     jSmart.prototype.registerPlugin(
+        'modifier',
+        'strstr',
+        function(haystack, needle)
+        {
+            return haystack.indexOf(needle) !== -1 ? haystack.slice(haystack.indexOf(needle)) : false;
+        }
+    );
+
+    jSmart.prototype.registerPlugin(
         'modifier', 
         'wordwrap', 
         function(s, width, wrapWith, breakWords)
